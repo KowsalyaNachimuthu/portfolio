@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kowsalya Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Kowsalya N</h1>
+    <p>AI & Data Science Student | Web Developer | Full Stack Developer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>
+        I am an Artificial Intelligence and Data Science student passionate
+        about web development, machine learning, and software engineering.
+        I enjoy building practical projects and learning new technologies.
+    </p>
+</section>
+
+<section id="skills" class="card">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <span>HTML</span>
+        <div class="bar"><div class="fill html"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>CSS</span>
+        <div class="bar"><div class="fill css"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar"><div class="fill js"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>Python</span>
+        <div class="bar"><div class="fill python"></div></div>
+    </div>
+</section>
+
+<section id="projects" class="card">
+    <h2>Projects</h2>
+    <div id="project-container"></div>
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact</h2>
+
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="msg"></p>
+</section>
+
+<footer>
+    <p>© 2026 Kowsalya Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
