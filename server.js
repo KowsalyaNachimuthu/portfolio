@@ -1,34 +1,16 @@
 const express = require("express");
+const path = require("path");
 
 const app = express();
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/projects",(req,res)=>{
-
-const projects = [
-
-{
-title:"Portfolio Website",
-description:"Full Stack Portfolio built using HTML, CSS, JavaScript and Node.js"
-},
-
-{
-title:"Student Management System",
-description:"CRUD application for managing student records"
-},
-
-{
-title:"Machine Learning Prediction",
-description:"Predictive model developed using Python"
-}
-
-];
-
-res.json(projects);
-
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-app.listen(3000,()=>{
-console.log("Server Running on Port 3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
